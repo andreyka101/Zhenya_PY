@@ -63,7 +63,7 @@
 # num_int = 4 # int - Целые числа
 # num_float = 5.7 # float - Числа с плавающей точкой
 # num_str = "w1e2r" # str - Строка
-# num_bool = False # boot - Логические значения
+# num_bool = False # bool - Логические значения
 # num_none = None # NoneType - Ничего
 
 
