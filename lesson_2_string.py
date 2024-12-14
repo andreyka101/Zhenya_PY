@@ -101,11 +101,11 @@
 
 
 # вывод символа из строки
-# str_1 = "q🐪werty"
-# print(str_1)
-# print(str_1[1] , str_1[5])
-# sumbol =  str_1[1] + str_1[5] + "*123"
-# print(sumbol)
+str_1 = "q🐪werty"
+print(str_1)
+print(str_1[1] , str_1[5])
+sumbol =  str_1[1] + str_1[5] + "*123"
+print(sumbol)
 
 
 
