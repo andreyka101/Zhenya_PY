@@ -164,3 +164,18 @@
 # Задание 4. Вывести на экран ромб из звездочек.
 
 # Задание 5. Вывести на экран икс из звездочек.
+
+
+# for y in range(7):
+#     str_ans = ""
+#     num_x = 6
+#     num_y = 0
+#     for x in range(7):
+#         if((x == 6 and y ==0) or(x == 5 and y ==1) or(x == 4 and y ==2) or(x == 3 and y ==3) or(x == 2 and y ==4) or(x == 1 and y ==5) or(x == 0 and y ==6)):
+#             str_ans += "* "
+#         elif(x == y):
+#             str_ans += "* "
+#         else:
+#             str_ans += ". "
+#     print(str_ans)
+
