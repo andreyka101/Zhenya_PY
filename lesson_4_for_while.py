@@ -86,8 +86,8 @@
 
 
 # шаг может быть отрицательным
-# for i in range(50 , 20-1 , -3):
-#     print(i)
+for i in range(50 , 20-1 , -3):
+    print(i)
 
 
 

@@ -2,7 +2,7 @@
 # вывод
 # print("hello world")
 # print('text')
-# print(12)
+print(12)
 
 
 
