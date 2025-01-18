@@ -36,7 +36,7 @@
 #     global num_1
 #     num_1 -= 1
 #     print(num_1)
-#     if(num_1 == 0):
+#     if(num_1 <= 0):
 #         return "end"
 #     else:
 #         return fun_3()
@@ -55,6 +55,8 @@
 #         return fun_3(num - 1)
 
 # print(fun_3(5))
+# print(fun_3(7))
+# print(fun_3(2))
 
 
 
@@ -66,6 +68,23 @@
 #         return save
 #     return fun_3(num - 1 , save + num)
 # print(fun_3(5))
+
+
+
+
+# рекурсия выводит элементы списка
+# def fun_3(arr_loc:list , index = 0):
+#     print("arr_loc =" , arr_loc , "index =" , index )
+#     # if(7 == index):
+#     #     return "end"
+#     if(len(arr_loc) == index):
+#         return "end"
+
+#     print(arr_loc[index])
+#     return fun_3(arr_loc , index + 1)
+
+# arr = [1,2,3,4,5,6,7 , 5,3]
+# print(fun_3(arr))
 
 
 
@@ -96,8 +115,6 @@ def fun_3(arr_loc:list , index = 0 , arr_save = []):
 
     if(arr_loc[index] % 2 == 0):
         arr_save.append(arr_loc[index])
-    else:
-        arr_save.append("ok")
 
 
     return fun_3(arr_loc , index + 1 , arr_save)
