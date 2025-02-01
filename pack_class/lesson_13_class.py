@@ -167,3 +167,27 @@ del dog_1
 # создать метод для добавления числа (его можно вызвать много раз и подучить много чисел)
 
 
+
+
+
+
+
+
+class Calculator:
+    def __init__(self , n1 , n2):
+        self.num_1= n1
+        self.num_2= n2
+
+    def fun_1(self):
+        print(self.num_1 * self.num_2)
+
+    def fun_2(self):
+        print(self.num_1 / self.num_2)
+
+
+    def fun_3(self):
+        print(self.num_1 + self.num_2)
+
+    def fun_4(self):
+        print(self.num_1 - self.num_2)
+calc_1 = Calculator(int(input("1 ==>")) , int(input("2 ==>")))

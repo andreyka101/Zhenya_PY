@@ -19,9 +19,9 @@
 
 
 # передача лямбде значения
-# lam_2 = lambda x: x * 3
-# print(lam_2(4))
-# print(lam_2(2))
+lam_2 = lambda x: x * 3
+print(lam_2(4))
+print(lam_2(2))
 
 
 

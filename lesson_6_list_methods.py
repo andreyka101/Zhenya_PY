@@ -3,7 +3,7 @@ arr = [1, 2, 3.1, 1, 4, 5, 1 , 8]
 
 
 # arr.append(x) - Добавляет элемент x в конец списка
-# arr.append("text")
+arr.append("text")
 # print(arr)
 
 # добавляем список в список
