@@ -96,7 +96,7 @@ print(dog_1.dogs)
 # создать 4 метода: умножение , деление , сумма , вычитание
 # создать метод для добавления дополнителиного числа (3, 4, 5 и тд) (его можно вызвать много раз и подучить много чисел)
 
-
+1 2 3
 
 # задание 2
 # создайте родительский класс , описывающий транспорт
@@ -108,3 +108,38 @@ print(dog_1.dogs)
 # наследуйте класс автомобили в котором есть ещё одна переменная количество мест
 
 # наследуйте класс вертолеты с дополнительным методом взлет 
+
+
+
+
+
+class Calculator:
+    def __init__(self, num_1, num_2):
+        self.numbers= [num_1, num_2]
+    def fun_0(self , x):
+        self.numbers.append(x)
+    def fun_1(self):
+        n = 0
+        print(self.num_1 * self.num_2)
+    def fun_2(self):
+        print(self.num_1 / self.num_2)
+    def fun_3(self):
+        print(self.num_1 + self.num_2)
+    def fun_4(self):
+        print(self.num_1 - self.num_2)
+
+
+
+calc_1 = Calculator(int(input("==>")), int(input("==>")))
+
+sigh= str(input("==>"))
+if (sigh == "*"):
+    print(calc_1.fun_1())
+elif (sigh == "/"):
+    print(calc_1.fun_2())
+elif (sigh == "+"):
+    print(calc_1.fun_3())
+elif (sigh == "-"):
+    print(calc_1.fun_4())
+else:
+    print("error")

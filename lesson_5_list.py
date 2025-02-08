@@ -33,9 +33,9 @@ print(arr)
 
 # перебор списка по индексу
 # for i in range(len(arr)):
-    # print(arr[i])
-    # arr[i] = "hello"
-    # arr[i] = arr[i] + 20
+#     print(arr[i])
+#     # arr[i] = "hello"
+#     # arr[i] = arr[i] + 20
 # print(arr)
 
 
@@ -88,14 +88,14 @@ arr_2 = [
 # фирмы за каждый месяц.
 
 # # 2
-pr=[]
-for i in range(6):
-    pr.append(int(input("==>")))
-print(pr)
-sum_x = 0
-for i in range(6):
-    sum_x+=pr[i]
-print(sum_x)
+# pr=[]
+# for i in range(6):
+#     pr.append(int(input("==>")))
+# print(pr)
+# sum_x = 0
+# for i in range(6):
+#     sum_x+=pr[i]
+# print(sum_x)
 
 # Задание 3. Написать программу, которая выводит список в обратном порядке (можно использовать только метод len()).
 
