@@ -1,9 +1,23 @@
+
+
+# нужная ссылка
+# https://pythonworld.ru/moduli/modul-array-massivy-v-python.html
+
 from array import array
 
 
-arr = array("b" , [100,2, 30,3 , 6])
-# arr = array("h" , [200,2,3])
-# arr = array("f" , [1.3 , 45.7 , 3.9])
+# создаём массив
+# array(r , s)
+# r - режим массива (размер каждой ячейки в массиве , таблица в ссылке)
+# s - список (можно не писать)
+
+# варианты массивов:
+arr = array("b" , [100,2, 30,3 , 6]) # int
+# arr = array("h" , [200,2,3]) # int
+# arr = array("f" , [1.3 , 45.7 , 3.9]) # float
+
+
+# работаем с массивом как со списком
 # print(arr)
 # print(arr[0])
 
@@ -11,6 +25,7 @@ arr = array("b" , [100,2, 30,3 , 6])
 
 
 
+# у массива есть методы списков:
 # array.append(х)
 # array.count(х)
 # array.index(х) 
@@ -25,41 +40,51 @@ arr = array("b" , [100,2, 30,3 , 6])
 
 
 
+# возвращает режим массива (символ при создании массива)
 # print(arr.typecode)
 
 
 
+# размер в байтах каждого элемента в массиве
 # print(arr.itemsize)
 
 
 
+# кортеж (ячейка памяти, длина масива). Полезно для низкоуровневых операций.
 # print(arr.buffer_info())
 
 
 
+# .byteswap() - преобразовывает байты
 # print(arr)
 # arr.byteswap() 
 # print(arr)
 
 
 
+# .tobytes() - преобразовывает к байтам
 # print(arr.tobytes())
 
 
 
+# frombytes(x) - делает массив из байт
 # arr_2 = array("h")
 # print(arr_2)
-# # arr_2.frombytes(b"d\x00\x02\x03")
-# arr_2.frombytes(bytes("d\x00\x02\x03" , encoding="UTF-8"))
+# b"" - строка байт
+# # arr_2.frombytes(b"d\x00\x02\x03") # вар 1
+# bytes(b, r) - превращает строку (b) в байты для работы нужно указать кодировку (r)
+# arr_2.frombytes(bytes("d\x00\x02\x03" , encoding="UTF-8")) # вар 2
 # print(arr_2)
 
 
 
+# .tofile(f) - сохраняет массив в открытый файл (f) , файл сохраняется в байтах
 # with open("file_arr.txt" , "bw") as file:
 #     arr.tofile(file)
 
 
 
+# .fromfile(f , n) - записывает (n) чисел из (f) файла в массив , числа в файле должны быть в байтах
 # with open("file_arr.txt" , "br") as file:
 #     arr_3 = array("h")
 #     arr_3.fromfile(file , 2)
@@ -67,12 +92,15 @@ arr = array("b" , [100,2, 30,3 , 6])
 
 
 
+# .fromlist() - добавление элементов из списка
 # arr.fromlist([12 ,2,3])
+# тоже самое что extend()
 # arr.extend([12 ,2,3])
 # print(arr)
 
 
 
+# .tolist() - преобразование массива в список
 # print(type(arr))
 # print(arr.tolist())
 # print(type(arr.tolist()))
@@ -81,7 +109,7 @@ arr = array("b" , [100,2, 30,3 , 6])
 
 
 
-
+# сортировка пузырьком
 def sort_arr(arr_loc):
     for r in arr_loc:
         for i in range(len(arr_loc) - 1):
@@ -98,3 +126,10 @@ print(arr)
 print(sort_arr(arr))
 
 
+
+
+
+
+# дз
+# номер 1
+# создайте много поточную сортировку пузырьком
