@@ -43,22 +43,22 @@
 
 
 # функция это переменная
-def fun_4():
-    print("225")
-    return [1,2,4,6]
+# def fun_4():
+#     print("225")
+#     return [1,2,4,6]
 
 # переменная num_f ссылается на функцию fun_4
-num_f = fun_4
-print(num_f())
+# num_f = fun_4
+# print(num_f())
 
 # мы запускаем функцию с помощью круглых скобок
-print(fun_4())
+# print(fun_4())
 # если скобоки не писать то получаем ячейку памяти
-print(fun_4)
+# print(fun_4)
 
 # типы
-print(type(fun_4()))
-print(type(fun_4))
+# print(type(fun_4()))
+# print(type(fun_4))
 
 
 
@@ -138,9 +138,10 @@ print(type(fun_4))
 
 
 # функция принимает несколько значений
-# def fun_7(z , x , r):
-#     return x + z + r
-# print(fun_7(5 , 8, 4))
+def fun_7(z=1 , x=0 , r=2):
+    print(x , z , r)
+    return x + z + r
+print(fun_7(r=30))
 
 
 
