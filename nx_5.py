@@ -2,8 +2,9 @@ import json
 
 
 
-# file_3 = open("w.json" , "r")
-# file_3.close()
+
+file_3 = open("w.json" , "r")
+file_3.close()
 
 def load():
     users = open("w.json", "r")
@@ -15,13 +16,16 @@ def load():
         with open("w.json", "w") as file:
             json.dump(arr_2 , file)
 
+    elif (w== "del"):
+        user= input("name del ==>")
+        del arr_2[user]
+        print("deleted")
+        with open("w.json", "w") as file:
+            json.dump(arr_2, file)
 
 
-    # elif (w== "del"):
 
-
-
-w= input("==>")
+w = input("==>")
 while(w != "ex" or w != "exit"):
     load()
     w= input("==>")
