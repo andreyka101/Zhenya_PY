@@ -17,6 +17,7 @@ lab_text_1.place(x= 300 , y=200 , height=80 , width=200)
 
 
 def fun_1():
+    # считываем переменную
     print(value_radio.get())
 
     if(value_radio.get() == "b1"):
@@ -32,11 +33,13 @@ def fun_1():
 
 
 
+# value_radio общая переменная для связи четырех Radiobutton
 # value_radio = IntVar()
 value_radio = StringVar()
 
 
 
+# variable - привязка Radiobutton к переменной
 check_1 = ttk.Radiobutton(text="but 1" , variable=value_radio , value="b1" , command= fun_1)
 check_1.place(x=10 , y=10)
 
@@ -53,6 +56,7 @@ check_4.place(x=10 , y=130)
 
 
 
+# три других Radiobutton они не связаны с четырьмя выше
 num_radio_2 = StringVar()
 
 

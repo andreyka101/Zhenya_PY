@@ -18,6 +18,7 @@ lab_text_1.place(x= 300 , y=200 , height=80 , width=200)
 
 
 def fun_1():
+    # получаем положение Checkbutton
     lab_text_1.config(text=num_check.get())
 
     if(num_check.get()):
@@ -25,14 +26,18 @@ def fun_1():
     else:
         lab_text_1.config(bg="#FF0808", fg="#92FFE7")
 
+
+# в num_check хранится положения Checkbutton
 # num_check = BooleanVar()
 num_check = IntVar()
+# Checkbutton это кнопка с двумя положениями
 check_1 = Checkbutton(text="but check" , variable=num_check , command=fun_1)
 check_1.place(x=10 , y=10)
 
 
 
 
+# стилизуем ttk Checkbutton
 ttk.Style().configure("My.TCheckbutton", foreground="#004D40",  background="#B2DFDB")
 check_2 = ttk.Checkbutton(text="check 2" , variable=num_check , style="My.TCheckbutton")
 check_2.place(x=10 , y=50)

@@ -30,7 +30,7 @@ button_get.place(x= 300 , y=300)
 
 
 def fun_b_insert():
-    # entry_1.get() - возвращает текст Entry
+    # entry_1.insert(i, x) - Вставляет на i индекс строку x
     entry_1.insert(3 , "xxx")
 button_insert = Button(text="insert" , command=fun_b_insert )
 button_insert.place(x= 300 , y=350)
@@ -38,7 +38,7 @@ button_insert.place(x= 300 , y=350)
 
 
 def fun_b_delete():
-    # entry_1.get() - возвращает текст Entry
+    # entry_1.delete(i, x) - удаляет строку начиная с индекса i и длиной x
     # entry_1.delete(2 , 5)
     entry_1.delete(0 , len(entry_1.get()))
 button_delete = Button(text="delete" , command=fun_b_delete )
@@ -49,26 +49,24 @@ button_delete.place(x= 300 , y=400)
 
 
 
+def fun_b_1():
+    # entry_1.get() - возвращает текст Entry
+    print(entry_1.get())
+    lab_text_1.config(text=entry_1.get())
 
+    # меняем ширину высоту и координаты окна через Entry
+    window.geometry(entry_1.get())
 
-# def fun_b_1():
-#     # entry_1.get() - возвращает текст Entry
-#     print(entry_1.get())
-#     lab_text_1.config(text=entry_1.get())
-
-#     # меняем ширину высоту и координаты окна через Entry
-#     window.geometry(entry_1.get())
-
-# button_1 = Button(text="set geo" , command=fun_b_1 )
-# button_1.place(x= 300 , y=300)
+button_1 = Button(text="set geo" , command=fun_b_1 )
+button_1.place(x= 20 , y=200)
 
 
 
-# def fun_b_2():
-#     # получаем ширину высоту и координаты окна
-#     lab_text_1.config(text=window.geometry())
-# button_2 = Button(text="get geo" , command=fun_b_2 )
-# button_2.place(x= 100 , y=300)
+def fun_b_2():
+    # получаем ширину высоту и координаты окна
+    lab_text_1.config(text=window.geometry())
+button_2 = Button(text="get geo" , command=fun_b_2 )
+button_2.place(x= 20 , y=250)
 
 
 
