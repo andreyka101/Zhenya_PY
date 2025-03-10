@@ -38,7 +38,7 @@ button_insert.place(x= 300 , y=350)
 
 
 def fun_b_delete():
-    # entry_1.delete(i, x) - удаляет строку начиная с индекса i и длиной x
+     
     # entry_1.delete(2 , 5)
     entry_1.delete(0 , len(entry_1.get()))
 button_delete = Button(text="delete" , command=fun_b_delete )
