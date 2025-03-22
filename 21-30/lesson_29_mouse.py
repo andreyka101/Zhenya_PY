@@ -13,7 +13,7 @@ text_l = Label(text="" , font=("" , 14))
 text_l.place(x=10 , y=100 , height=50)
 
 
-
+# во всех обработках мыши можно смотреть координаты
 def funMotion(event):
     # text_l.config(text=event)
     window.title(f"{event.x}/{event.y}")
@@ -21,6 +21,7 @@ def funMotion(event):
     # text_l.config(text=event.state)
 # window.bind("<Motion>" , funMotion)
 
+# обработчик движения мыши
 text_l.bind("<Motion>" , funMotion)
 
 
@@ -32,6 +33,8 @@ def funB1(event):
     # text_l.config(text=event.num)
 
 #     text_l.config(text=event.state)
+
+# обработчик нажатия лкм
 window.bind("<Button-1>" , funB1)
 
 
@@ -43,6 +46,8 @@ def funB2(event):
     # text_l.config(text=event.num)
 
     # text_l.config(text=event.state)
+
+# обработчик нажатия колёсика
 window.bind("<Button-2>" , funB2)
 
 
@@ -54,6 +59,8 @@ def funB3(event):
     # text_l.config(text=event.num)
 
     # text_l.config(text=event.state)
+
+# обработчик нажатия пкм
 window.bind("<Button-3>" , funB3)
 
 
@@ -75,6 +82,7 @@ def funMouseWheel(event):
     # t_y += (event.delta/10)*2
     # text_l.place(y=t_y)
 
+# обработчик вращения колёсика
 window.bind("<MouseWheel>" , funMouseWheel)
 
 
@@ -86,6 +94,8 @@ def funBMotion(event):
     # text_l.config(text=event.num)
 
     # text_l.config(text=event.state)
+
+# обработчик движения мыши при зажатой лкм
 window.bind("<B1-Motion>" , funBMotion)
 
 
@@ -97,25 +107,6 @@ window.mainloop()
 
 
 
-
-
-
-# dz
-
-# keyboard
-# Задание 1. 
-# игра кликер
-# если пользователь зажмет комбинацию клавиш, то появляется меню настроек
-# в настройках можно менять фон кнопки и окна , размер кнопки и окна
-# размер кнопки и окна меняется в режиме реального времени
-# при отжатии комбинации клавиш меню исчезает
-# Подсказка пользователь вводит ширину и высоту в отдельные entry
-
-
-
-# mouse
-# Задание 2. 
-# сделать калькулятор через bind
 
 
 
