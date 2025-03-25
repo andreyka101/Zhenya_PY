@@ -21,6 +21,7 @@ robot_obj={
 }
 
 
+# монетка появляется рандомно
 rand_x = random.randint(0,11)
 rand_y = random.randint(1, 9)
 coin_obj={
@@ -38,6 +39,7 @@ canV.create_oval(list(coin_obj.values()) , width=0 , fill="#FFEA2E")
 
 def fun(event):
     print(event.keycode)
+    # меняем координаты робота
     if((event.keycode == 65 or event.keycode == 37) and robot_obj["x1"] >0):
         robot_obj["x1"]-=50
         robot_obj["x2"]-=50
@@ -52,8 +54,8 @@ def fun(event):
         robot_obj["y2"]+=50
 
     
-
-    # canV.create_rectangle(0,0 ,600,500, width=0 , fill="#FFFFFF")
+    # отрисовка робота
+    canV.create_rectangle(0,0 ,600,500, width=0 , fill="#FFFFFF")
     canV.create_rectangle(list(robot_obj.values()) , width=0 , fill="#3B7893")
 window.bind("<KeyPress>",fun)
 
