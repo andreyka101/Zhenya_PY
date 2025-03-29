@@ -54,8 +54,22 @@ def fun(event):
         robot_obj["y2"]+=50
 
     
+    global coin_obj
+    
+    if(robot_obj["x1"] == coin_obj["x1"] and robot_obj["y1"] == coin_obj["y1"]):
+        rand_x = random.randint(0,11)
+        rand_y = random.randint(1, 9)
+        coin_obj={
+            "x1":50 * rand_x,
+            "y1":50 * rand_y,
+            "x2":(50 * rand_x) + 50,
+            "y2":(50 * rand_y) + 50,
+        }
+
+
     # отрисовка робота
     canV.create_rectangle(0,0 ,600,500, width=0 , fill="#FFFFFF")
+    canV.create_oval(list(coin_obj.values()) , width=0 , fill="#FFEA2E")
     canV.create_rectangle(list(robot_obj.values()) , width=0 , fill="#3B7893")
 window.bind("<KeyPress>",fun)
 

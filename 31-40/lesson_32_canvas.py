@@ -52,7 +52,36 @@ canV.create_rectangle(0 , 0 ,600,500 , fill="#FFFFFF" , width= 0 )
 # fill = цвет
 # width = толщина рамки
 # outline = цвет рамки
-canV.create_oval(100 , 100 ,300,300 , fill="#0E4F68" , width= 5 , outline="#BA690C")
+# canV.create_oval(100 , 100 ,300,300 , fill="#0E4F68" , width= 5 , outline="#BA690C")
+
+
+
+
+canV.create_text(400 , 400 , text="rfgtrfuwdw iejf\nefe[fe;[eoko]]\npefleflp\neefef" , fill="#FF8921" , font="Impact 14" , justify="center")
+
+
+
+
+# canV.create_arc(100 , 100 ,300,300 , start=50 , extent=240, fill="#4DE487" , width= 0 , outline="#D5EA87")
+
+
+
+
+# canV.create_arc(100 , 100 ,300,300 , start=50 , extent=60, fill="#4DE487" , width= 0 , outline="#D5EA87", style="pieslice")
+
+
+
+# canV.create_arc(100 , 100 ,300,300 , start=50 , extent=260, fill="#4DE487" , width= 10 , outline="#D5EA87", style="arc")
+
+
+
+canV.create_arc(100 , 100 ,300,300 , start=50 , extent=80, fill="#4DE487" , width= 0 , outline="#D5EA87", style="chord")
+
+
+
+
+# arc, chord, or pieslice
+
 
 
 
