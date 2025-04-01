@@ -23,6 +23,7 @@ def fun_2():
 
 
 
+# список кнопок
 button_arr = [
     {
         "x":50,
@@ -46,6 +47,8 @@ button_arr = [
     },
 ]
 
+
+# рендерим кнопки и текст в них
 for element in button_arr:
     canV.create_rectangle(element["x"] , element["y"] , element["width"] , element["height"] , fill=element["background"] , width=0)
     canV.create_text((element["width"] + element["x"])/2, (element["height"] + element["y"])/2, text=element["text"] , justify="center" , font="s 14")

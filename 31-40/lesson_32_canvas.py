@@ -57,30 +57,38 @@ canV.create_rectangle(0 , 0 ,600,500 , fill="#FFFFFF" , width= 0 )
 
 
 
+# create_text - создать текст
+# fill = цвет
+# font = размер и шрифт
+# text = текст
+# justify = выравнивание текста
 canV.create_text(400 , 400 , text="rfgtrfuwdw iejf\nefe[fe;[eoko]]\npefleflp\neefef" , fill="#FF8921" , font="Impact 14" , justify="center")
 
 
 
 
+
+# create_arc - создаёт дугу
+# start = начальный угол дуги в градусах;
+# extent = размер дуги в градусах. Дуга всегда рисуется в направлении 
+# против часовой стрелки;
+# fill = цвет
+# width = толщина линии дуги
+# outline = цвет рамки
 # canV.create_arc(100 , 100 ,300,300 , start=50 , extent=240, fill="#4DE487" , width= 0 , outline="#D5EA87")
 
 
-
-
+# style ='pieslice' - дуга с углом (стоит по умолчанию)
 # canV.create_arc(100 , 100 ,300,300 , start=50 , extent=60, fill="#4DE487" , width= 0 , outline="#D5EA87", style="pieslice")
 
 
-
+# style ='arc' - рамка дуги
 # canV.create_arc(100 , 100 ,300,300 , start=50 , extent=260, fill="#4DE487" , width= 10 , outline="#D5EA87", style="arc")
 
 
-
+# style ='chord' - дуга без угла
 canV.create_arc(100 , 100 ,300,300 , start=50 , extent=80, fill="#4DE487" , width= 0 , outline="#D5EA87", style="chord")
 
-
-
-
-# arc, chord, or pieslice
 
 
 
