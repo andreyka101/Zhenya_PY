@@ -75,7 +75,7 @@ canV.create_text(400 , 400 , text="rfgtrfuwdw iejf\nefe[fe;[eoko]]\npefleflp\nee
 # fill = цвет
 # width = толщина линии дуги
 # outline = цвет рамки
-# canV.create_arc(100 , 100 ,300,300 , start=50 , extent=240, fill="#4DE487" , width= 0 , outline="#D5EA87")
+canV.create_arc(100 , 100 ,300,300 , start=100 , extent=240, fill="#4DE487" , width= 0 , outline="#D5EA87")
 
 
 # style ='pieslice' - дуга с углом (стоит по умолчанию)
@@ -87,8 +87,14 @@ canV.create_text(400 , 400 , text="rfgtrfuwdw iejf\nefe[fe;[eoko]]\npefleflp\nee
 
 
 # style ='chord' - дуга без угла
-canV.create_arc(100 , 100 ,300,300 , start=50 , extent=80, fill="#4DE487" , width= 0 , outline="#D5EA87", style="chord")
+# canV.create_arc(100 , 100 ,300,300 , start=50 , extent=80, fill="#4DE487" , width= 0 , outline="#D5EA87", style="chord")
 
+
+
+
+
+photo = PhotoImage(file="photo_n1.png")
+canV.create_image(300,250 , image = photo)
 
 
 

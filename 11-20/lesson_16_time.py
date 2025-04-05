@@ -1,10 +1,10 @@
 
 # подключаем библитеку time
-# import time 
+import time 
 
 
 # .time() - получить unix время
-# print(time.time())
+print(time.time())
 # формула рандомного числа
 # print(int(time.time() * 1000000) % (20 - 1 + 1) + 1)
 
