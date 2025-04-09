@@ -44,14 +44,23 @@ print(save_time)
 while(save_time + 100 >= time.time()):
     # print(save_time + 5 , "-", time.time())
     canV.update()
+    # скорость анимации
     move = time.time() - save_time
+    # меняем скорость анимации
     # move = (time.time() - save_time) * 100
+    # резкая скорость анимации
     # move = round((time.time() - save_time) * 10 , 1)
     print(move)
 
     canV.create_rectangle(0,0 ,1900,500 , width=0 , fill="#ffffff")
+
+
+    # анимация простая
     # canV.create_rectangle(10 + move,10 , 60 + move,60 , width=3 , fill="#9C1AFF")
+
+    # анимация с постепенным увилечением скорости
     # canV.create_rectangle(10 + move **2,10 , 60 + move**2,60 , width=3 , fill="#9C1AFF")
+    # анимация отскока (не работает)
     canV.create_rectangle(10 + easeOutBounce(move) * 10 ,10 , 60 + easeOutBounce(move) * 10 ,60 , width=3 , fill="#9C1AFF")
 
 

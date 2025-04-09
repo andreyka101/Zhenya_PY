@@ -93,6 +93,7 @@ canV.create_arc(100 , 100 ,300,300 , start=100 , extent=240, fill="#4DE487" , wi
 
 
 
+# создание картинки
 photo = PhotoImage(file="photo_n1.png")
 canV.create_image(300,250 , image = photo)
 

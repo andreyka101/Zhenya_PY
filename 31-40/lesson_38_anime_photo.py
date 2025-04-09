@@ -58,6 +58,8 @@ while(save_time + 100 >= time.time()):
     if(frame_number >= 7):
         frame_number = 1
     canV.create_rectangle(0,0 ,800,800 , width=0 , fill="#ffffff")
+
+    
     photo = PhotoImage(file=f"running/frame-{frame_number}.png")
     canV.create_image(400,380 , image = photo)
 
