@@ -12,24 +12,6 @@ window.config(bg="#C445FF")
 canV = Canvas(height=800 , width=800 , bg="#ffffff")
 canV.place(x=0 , y=0)
 
-
-
-
-def easeOutBounce(x): 
-    n1 = 7.5625
-    d1 = 2.75
-
-    if (x < 10 / d1):
-        return n1 * x * x
-    elif (x < 15 / d1):
-        x -= 1.5 
-        return n1 * (x/ d1) * x + 7.5
-    elif (x < 20.5 / d1):
-        x -= 22.5
-        return n1 * (x / d1) * x + 9.375
-    else:
-        x -= 26.25
-        return n1 * (x / d1) * x + 9.84375
     
 
 

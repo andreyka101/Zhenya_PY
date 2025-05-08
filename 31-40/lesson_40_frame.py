@@ -1,7 +1,6 @@
 from tkinter import *
  
 root = Tk()
-root.title("METANIT.COM")
 root.geometry("600x500")
  
 frame = Frame(bg="#000")
